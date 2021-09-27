@@ -31,3 +31,15 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and a perfect cube.
 """
+# Some random integer values
+values = [
+    3, 27, 81, 100, 1728,
+    4539, 59319, 216100,
+]
+
+# See if each number is a perfect cube
+for value in values:
+    is_cube = "is_perfect_cube"(value)
+
+    if is_cube:
+        print(value, "is a perfect cube!")
