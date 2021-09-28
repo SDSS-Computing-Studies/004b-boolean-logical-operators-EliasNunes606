@@ -24,3 +24,5 @@ Enter a number: 5
 Enter a number: 4.0
 4.0 is a positive integer
 """
+
+x = float(input)

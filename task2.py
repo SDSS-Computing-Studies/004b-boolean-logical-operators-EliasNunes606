@@ -31,15 +31,14 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and a perfect cube.
 """
-# Some random integer values
-values = [
-    3, 27, 81, 100, 1728,
-    4539, 59319, 216100,
-]
-
-# See if each number is a perfect cube
-for value in values:
-    is_cube = "is_perfect_cube"(value)
-
-    if is_cube:
-        print(value, "is a perfect cube!")
+num1 = float(input("Enter a number:"))
+sq = num1**(1/2)
+cb = num1**(1/3)
+sq = round(sq, 8)
+cb = round(cb, 8)
+if sq == int(sq) and cb == int(cb):
+    print(f"{num1} is both a perfect square and perfect cube.")
+elif sq == int(sq) and cb != int(cb):
+    print(f"{num1} is only a perfect square")
+elif sq != int(sq) and cb == int(cb):
+    print(f"{num1} is only a perfect cube.")
