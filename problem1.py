@@ -25,4 +25,16 @@ Enter a number: 36
 Enter a number: 16
 16 is not frue
 """
+num = input("Number?:")
+num = float(num)
+
+if num%6 == 0 and num%8 != 0 :
+    num = round(num)
+    num = int(num)
+    print(num,"is frue")
+else :
+    num = round(num)
+    num = int(num)
+    print(num,"is not frue")
+ 
 
